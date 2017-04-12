@@ -92,6 +92,9 @@
 We are now ready to execute our simple program with its dependency on commons-lang.
 Let's go!
 		</echo>
+    </target>
+
+    <target name="run" depends="go" description="run the project">
         <java classname="example.Hello">
             <classpath>
                 <path refid="lib.path.id" />
